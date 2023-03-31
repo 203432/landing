@@ -12,29 +12,29 @@ export const Seccion2 = () => {
         <div className="imagen">
           <img className="item" src={lasagna} alt="logo" />
           <div className="info">
-            <h3>Nombre del plato</h3>
-            <p>Precio: $XX.XX</p>
+            <h3>Lasaña</h3>
+            <p>Precio: $200.00</p>
           </div>
         </div>
         <div className="imagen">
           <img className="item" src={pizza} alt="logo" />
           <div className="info">
-            <h3>Nombre del plato</h3>
-            <p>Precio: $XX.XX</p>
+            <h3>Pizza de la casa</h3>
+            <p>Precio: $250.00</p>
           </div>
         </div>
         <div className="imagen">
           <img className="item" src={pasta} alt="logo" />
           <div className="info">
-            <h3>Nombre del plato</h3>
-            <p>Precio: $XX.XX</p>
+            <h3>spaguetti a la bolignesa</h3>
+            <p>Precio: $100.00</p>
           </div>
         </div>
         <div className="imagen">
           <img className="item" src={ravioli} alt="logo" />
           <div className="info">
-            <h3>Nombre del plato</h3>
-            <p>Precio: $XX.XX</p>
+            <h3>ravioli</h3>
+            <p>Precio: $80.00</p>
           </div>
         </div>
       </div>

@@ -22,8 +22,7 @@ export const Foot = () => {
           <p>Calle Jesus del Valle, 40, 28004 Madrid</p>
         </div>
         <div className="s3dw2">
-          <b>Pizza house</b>
-          <p>Lorem ipsum dolor sit amer</p>
+          <b>Pizza house</b> <br/>
           <b>Siguenos</b>
           <br />
           <FaFacebook style={{ color: "black", fontSize: "35px" }} />
