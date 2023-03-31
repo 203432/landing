@@ -1,38 +1,329 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: local('PlayfairDisplay'), url(./fonts/PlayfairDisplay/static/PlayfairDisplay-Regular.ttf) format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Cormorant';
+  src: local('Cormorant'), url(./fonts/Cormorant/static/Cormorant-Regular.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: black;
+  color: aliceblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.seccion-1{
+  background-image: url("./assets/fondo1.svg");
+  height: 1012px;
+  background-repeat: no-repeat;
+}
+
+.seccion-1 p{
+  font-size: 30px;
+  font-family: PlayfairDisplay ;
+  margin: 0;
+}
+.seccion-1 .p2{
+  font-size: 100px;
+  font-family:Cormorant;
+  margin: 0;
+}
+
+.seccion-2{
+  width: 100%;
+  height: 1012px;
+}
+
+.seccion-3{
+  background-image: url("./assets/Fondo3.png");
+  width: 100%;
+  height: 890px;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.about{
+  background-color: #4C242D;
+  height: 820px;
+
+}
+
+.aboutText div{
+  background-color: #4c242da5;
+  width: 300px;
+  height: 300px;
+  margin-top: 30%;
+  margin-left: 10%;
+  font-size: 70px;
+  padding: 2%;
+}
+
+
+.header-s2{
+  background-color:  #6B2737;
+  width: 100%;
+  height: 130px;
+  font-size: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  align-items: center;
+}
+.fondoItems{
+  background-color: #212121;
+  width: 100%;
+  height: 456px;
 }
 
-.App-link {
-  color: #61dafb;
+.log{
+  width: 130px;
+  height: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
+
+
+footer{
+  background-color:  #4C242D;
+  width: 100%;
+  height: 547px;
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  height: 130px;
+  background-color: #6B2737;
+  padding: 0;
+  max-height: 130px;
+}
+
+.nb-grid1{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.nb-grid2{
+  font-family: PlayfairDisplay ;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  text-align: end;
+  max-height: 130px;
+  padding-right: 5%;
+}
+
+.bar4{
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.bar4 div{
+  border-right: 2px solid black;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.nombreEmpresa{
+  font-size: 50px;
+}
+
+.fondoItems{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.imagen:hover img{
+  opacity: 1;
+}
+.imagen img{
+  opacity: 0.49;
+  width: 250px;
+  transition: opacity 0.3s ease-out 100ms;
+}
+
+.imagen{
+  position: relative;
+  display: inline-block;
+}
+
+.info{
+  position: absolute;
+  bottom: -80px; /* Ajusta la posición inicial del cuadro de información para que esté debajo de la imagen */
+  left: 0;
+  right: 0;
+  background-color: #4C242D;
+  padding: 10px;
+  width: 230px;
+  transform: translateY(-20px); /* Aplica una transformación de traslación vertical para crear la animación */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Agrega una transición suave a la transformación y a la opacidad */
+  opacity: 0;
+}
+
+.imagen:hover .info {
+  transform: translateY(0); /* Desplaza el cuadro de información hacia arriba al hacer hover */
+  opacity: 1;
+}
+
+
+footer{
+  display: grid;
+  grid-template-rows: 40% 55% 5%;
+}
+
+
+.s3Up{
+  display: grid;
+  grid-template-columns: 39% 20% 39%;
+}
+
+.s3dw{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.s3dw2{
+  text-align: center;
+
+}
+
+.s3dw3{
+  text-align: end;
+
+}
+
+.s3Up hr{
+  background-color: black;
+  height: 5px;
+  width: 100%;
+  border: black;
+}
+
+.s3Up div{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.nmCircular{
+  color: black;
+  font-size: 56px;
+  height: 180px;
+  width: 230px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid black;
+  border-radius: 50%;
+}
+
+.MapHeader{
+
+  text-align: center;
+  justify-content: center;
+}
+
+.MapText{
+  background-color:  #6B2737;
+  width: 90%;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.Platillos-Container{
+  display: grid;
+  grid-template-rows: 10% 90%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  height: 1620px;
+  background-color: #212121;
+  padding: 0;
+}
+
+.platillos-list{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.platillos-list div{
+  width: 220px;
+  height: 251px;
+  background-color: #4C242D;
+}
+
+.platillos-container-header{
+  display: grid;
+justify-content: center;
+text-align: center;
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.boton-header-container{
+  text-align: center;
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+  border-radius: 12px;
+  width: 222px;
+  height: 62px;
+  background-color: #6B2737;
+  font-size: 40px;
+}
+
+.Item{
+  width: 220px;
+  height: 251px;
+  background-color: #6B2737;
+}
+.itemImg{
+width: 220px;
+height: 180px;
+}
+
+
+.Introduccion{
+  margin-left: 8%;
+  margin-top: 14%;
+}
+.Introduccion {
+  animation: fadeInLeft 1s ease-in-out 0.5s both;
+}
+
+@keyframes fadeInLeft {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateX(-10%);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
